@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PrimeVideoMaxQuality</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <div class="row">
+        <img src="../icons/icon-48.png" alt="icon" class="icon" />
+        <div class="info">
+          <!-- Título visível somente quando há resolução detectada; controlado por popup.js -->
+          <div id="title" class="title" style="display:none">Resolução</div>
+          
+          <!-- Exibe a resolução detectada (ex.: 1080p); atualizada por popup.js -->
+          <div id="resolution" class="value"></div>
+          
+          <!-- Dica/placeholder mostrado quando não há resolução disponível -->
+          <div id="hint" class="hint"></div>
+        </div>
+      </div>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

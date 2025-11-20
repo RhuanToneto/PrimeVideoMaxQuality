@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+/* Estilização base do popup com largura mínima padrão antes de mostrar resolução */
+body {
+	margin: 0;
+	font-family: Segoe UI, system-ui;
+	color: #000;
+	font-weight: bold;
+	min-width: 290px;
+}
+
+/* Classe adicionada via JS para indicar que a resolução está visível e reduzir a largura mínima */
+body.resolution-visible {
+	min-width: 170px;
+}
+
+main {
+	padding: 10px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.row {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.icon {
+	width: 36px;
+	height: 36px;
+	border-radius: 6px;
+}
+
+.title {
+	font-size: 20px;
+}
+
+/* Estilo do elemento que exibe a resolução (valor atualizado dinamicamente por popup.js) */
+.value {
+	font-size: 25px;
+}
+
+.hint {
+	font-size: 18px;
+}
